@@ -1,0 +1,13 @@
+{
+    "movies": [
+        {
+            "title": "Terminator Genesys"
+        },
+        {
+            "title": "Terminator Salvation"
+        }, 
+        {
+            "title": "Terminator 2: Judgement Day"
+        }
+    ]
+}
