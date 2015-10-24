@@ -1,0 +1,6 @@
+dev:
+    image: node
+    volumes:
+        - .:/workspace
+    ports:
+        - "80:80"
