@@ -1,5 +1,5 @@
-var movies = App.require("routes/movies"),
-    movie = App.require("routes/movie");
+var movies = App.require("app/routes/movies"),
+    movie = App.require("app/routes/movie");
 
 exports.setup = function(router) {
     router.get("/movies", movies);
