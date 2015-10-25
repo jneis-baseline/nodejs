@@ -1,12 +1,15 @@
 {
     "movies": [
         {
+            "id": "0",
             "title": "Terminator Genesys"
         },
         {
+            "id": "1",
             "title": "Terminator Salvation"
         }, 
         {
+            "id": "2",
             "title": "Terminator 2: Judgement Day"
         }
     ]

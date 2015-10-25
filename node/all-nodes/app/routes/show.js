@@ -5,6 +5,5 @@ module.exports = function(request, response) {
         return m.id === request.params.id;
     });
 
-    response.setHeader("Content-type", "application/json");
-    response.end(JSON.stringify(movie));
+    response.render("show", {movie: movie});
 };
