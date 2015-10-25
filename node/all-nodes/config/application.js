@@ -27,6 +27,10 @@ global.App = {
     }
 }
 
+app.set("views", App.path("app/views"));
+app.set("view engine", "jade");
+app.set("view options", {pretty: env === "dev"});
+
 //app.use(express.bodyParser());
 //app.use(express.methodOverride());
 //app.use(express.cookieParser());
