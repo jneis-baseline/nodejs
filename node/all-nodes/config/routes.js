@@ -1,7 +1,7 @@
-var list = App.require("routes/list"),
-    show = App.require("routes/show");
+var movies = App.require("routes/movies"),
+    movie = App.require("routes/movie");
 
 exports.setup = function(router) {
-    router.get("/movies", list);
-    router.get("/movies/:id", show);
+    router.get("/movies", movies);
+    router.get("/movies/:id", movie);
 };
