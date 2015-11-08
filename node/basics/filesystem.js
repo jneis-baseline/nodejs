@@ -67,4 +67,4 @@ fs.rmdir('temp', function(err){
     if (err) console.error(err.message);
 });
 
-// open...
+// open... (see streams)
