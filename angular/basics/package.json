@@ -2,15 +2,17 @@
   "name": "basics",
   "version": "1.0.0",
   "description": "sandbox proj for reviewing angular",
-
-  "main": "index.js",
-
+  
   "scripts": {
+  	"bower-init": "bower init",
+    "bower-install": "bower install --save",
+
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8080 -c-1"
   },
-
+  
   "dependencies": {
+    "bower": "^1.6.5",
     "http-server": "^0.8.5"
   }
 }
