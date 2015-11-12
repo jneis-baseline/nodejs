@@ -1,30 +1,21 @@
-// creates new module, with [] deps
-angular.module('invoice', [])
-
-	// creates new controller
-	.controller('InvoiceController', function() {
+// invoice module has a dep on finance module
+angular.module('invoice', ['finance'])
+	
+	// controller depends on a service from finance module
+	.controller('InvoiceController', ['currencyConverter', function(converter) {
 
 		this.qty = 1;
 		this.cost = 2;
 
 		this.from = 'EUR';
-		this.currencies = ['USD', 'EUR', 'CNY'];
-		this.rates = {
-			USD: 1,
-			EUR: 0.74,
-			CNY: 6.09
-		};
+		this.currencies = converter.currencies;
 
 		this.total = function(to) {
-			return this.convert(this.qty * this.cost, this.from, to);
-		};
-
-		this.convert = function(amount, from, to) {
-			return amount * this.rates[from] / this.rates[to];
+			return converter.convert(this.qty * this.cost, this.from, to);
 		};
 
 		this.pay = function() {
 			window.alert('Thanks!');
 		};
 
-	});
+	}]);
