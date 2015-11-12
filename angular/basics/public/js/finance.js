@@ -1,7 +1,7 @@
 // creates a new module with no deps
 angular.module('finance', [])
 
-	// creates a new service with a dep from core
+	// creates a new service with a dep to a core service
 	.factory('currencyConverter', ['$http', function($http) {
 		
 		var YAHOO_URL = '//query.yahooapis.com/v1/public/yql?q=' +
