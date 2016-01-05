@@ -1,5 +1,5 @@
 // console, or require('console')
-// - object is a global object
+// - console is a global object
 // - output is sent to process.stdout or process.stderr
 // - functions are sync for terminal, async for pipes
 
