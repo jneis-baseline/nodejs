@@ -5,6 +5,7 @@
 
 console.log('message', 'without', 'placeholders');
 
+// formatting can be accomplished in the same way using require('utils')
 console.log('%s %d %j', 'string', 1, {json: 'obj'}, {js: 'obj'});
 
 console.info('same as console.log');
